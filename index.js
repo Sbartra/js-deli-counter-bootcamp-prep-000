@@ -1,9 +1,9 @@
 func stringForDeliLine(deliLine: [String]) -> String {
-    
+
     if deliLine.count == 0 {
         return "The line is currently empty."
     }
-    
+
     var result = "The line is:"
     for var i = 0; i < deliLine.count; i++ {
         let numberInLine = i + 1
@@ -12,14 +12,14 @@ func stringForDeliLine(deliLine: [String]) -> String {
     print(result)
     return result
 }
-    
+
 func addName(name: String, toDeliLine deliLine: [String]) -> [String] {
     var newDeliLine = deliLine
     newDeliLine.append(name)
     print("Welcome \(name)! You are number \(newDeliLine.count) in line.")
     return newDeliLine
 }
-        
+
 func serveNextCustomerInDeliLine(deliLine: [String]) -> [String] {
     var newDeliLine = deliLine
 
